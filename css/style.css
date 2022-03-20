@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+}
+div#wrapper {
+  overflow: hidden; 
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+}
+body, input, button {
+  font-size: 14px;
+  font-family: arial,sans-serif;
+  color: #202124;
+}
+header, section, .language-choice, footer {
+  width: 100%;
+}
+/* header styles */
+#upper-area {
+  height: 60px;
+  padding: 6px;
+  width: 100%;
+}
+nav.upper-right {
+  float: right;
+  width: 20%;
+  padding: 6px;
+  display: table;
+}
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92px;
+}
+div.left {
+  float: left;
+  margin-right: 30px;
+  margin-top: 2px;
+  display: table;
+}
+div.left-l {
+  float: left;
+  margin-right: 20px;
+}
+div.left-r {
+  float: left;
+}
+div.left-l>a {
+  text-decoration: none;
+  font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+  color: rgba(0,0,0,0.87);
+}
+div.left-l>a:hover {
+  text-decoration: underline;
+}
+div.left-r>a {
+  text-decoration: none;
+  font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+  color: rgba(0,0,0,0.87);
+}
+div.left-r>a:hover {
+  text-decoration: underline;
+}
+div.right {
+  margin-top: -1px;
+  float: left;
+  display: table;
+}
+svg {
+  color: #5f6368;
+  opacity: 1;
+  fill: currentColor;
+}
+div.svg {
+  cursor: pointer;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+  display: table-cell;
+  vertical-align: middle;
+}
+div.p-foto-area {
+  float: left;
+}
+img.p-foto {
+  border-radius: 50%;
+  object-fit: cover;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* section styles */
+
+section {
+  padding: 20px;
+  width: 100%;
+  min-height: 120px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.form-area {
+    margin: 0 auto;
+    width: 640px;
+    padding-top: 6px;
+    width: auto;
+    max-width: 584px;
+    min-height: 120px;
+}
+
+/* searc area styles */
+
+.search-area {
+  margin: 9px;
+}
+.wrapper-search-area {
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+}
+.form-area {
+  width: 100%;
+  height: auto;
+}
+span.sp1 {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+}
+span.sp2 {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+span.sp2>svg {
+  color: #5f6368a3;;
+  display: block;
+  height: 100%;
+  width: 100%;
+  fill: currentColor;
+}
+
+/* input styles */
+
+.inpt {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 7px;
+  height: 34px;
+  font-size: 16px;
+}
+
+/* voice end keyboard styles */
+
+.voice-end-key {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: -5px;
+  align-items: stretch;
+  flex-direction: row;
+}
+.key-area {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
+.sp-img {
+  background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+.key {
+  visibility: hidden;
+}
+
+.voice-area {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
+
+/* google search buttons styles */
+
+.gbtn {
+  padding-top: 18px;
+}
+.lucky {
+  height: 70px;
+}
+.lucky input[type="submit"], .gbqfba {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* language area styles */
+
+#lang {
+  color: #3c4043;
+  display: inline-block;
+  line-height: 28px;
+}
+#lang>a {
+  padding: 0 3px;
+  font-size: small;
+}
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+.lang-area {
+  text-align: center;
+}
+#lang-area-id {
+  font-size: small;
+  margin-bottom: 24px;
+}
+.lang-wrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* footer area styles */
+
+.f1 {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.f2 {
+  background: #f2f2f2;
+}
+.f-up {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+}
+.f-padding {
+  padding: 0 20px;
+}
+.footer-nav-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* footer upper area */
+.fNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fNav2 {
+  justify-content: flex-start;
+  min-width: 30%;
+  order: 1;
+}
+.karbon-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-area {
+  order: 2;
+}
+
+/* nav left styles */
+.navRight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navRight2 {
+  justify-content: flex-end;
+  min-width: 30%;
+  order: 3;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  background-color: transparent;
+  color: #70757a;
+  text-decoration:none; 
+  padding: 15px;
+  white-space: nowrap;
+}
+li a:hover{
+  text-decoration: underline;
+}
+
+/* karbon nötr text styles */
+
+a.yprk {
+  color: #70757a;
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+}
+a.yprk:hover {
+  text-decoration: underline;
+}
+.yprk-img {
+  height: 14px;
+  margin-right: 6px;
+}
+.center-text {
+  white-space: nowrap;
+  vertical-align: top;
+}
